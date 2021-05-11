@@ -52,6 +52,7 @@ Output is printed on `stdout`.
 Any error message must be printed on `stderr`
 
 <h2>Usage</h2>
+
 `monty file`
 
 where `file` is the path to the file containing Monty byte code
