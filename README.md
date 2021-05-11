@@ -63,4 +63,9 @@ Below are files used and their descriptions
 | File name                                                                      | Description |
 | ---------------------------------------------------------------------------    | ----------- |
 |     [monty.c](../monty/blob/main/monty.c)                                      | Entry point to the program      |
-|     [file_handling.c](../monty/blob/main/file_handling.c)                      | Contains functions that are involved in reading instructions from the file     |
+|     [file_handling.c](../monty/blob/main/file_handling.c)                      | Contain functions that are involved in reading instructions from the file     |
+|     [interpret.c](../monty/blob/main/interpret.c)                              | Contain functions ressponsible for stepping through each instruction and interprating |
+|     [instructions.c](../monty/blob/main/instructions.c)                        | Functions responsible for operations perfomed from opcodes instructions |
+|     [instructions2.c](../monty/blob/main/instructions2.c)                      | An extension of [instructions.c](../monty/blob/main/instructions.c) |
+|     [stack_handling.c](../monty/blob/main/stack_handling.c)                    | Contains functions involved in manipulating elements in a stack, ie pushing, popping ... |
+|     [stack_handling2.c](../monty/blob/main/stack_handling2.c)                  | An extension of [stack_handling2.c](../monty/blob/main/stack_handling2.c) functions |
