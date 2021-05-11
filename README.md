@@ -77,7 +77,7 @@ Below are files used and their descriptions
 
 <h1>opcodes</h1>
 
-| File name                                | Description |
+| <h2>Opcode</h2>                          | <h2>Description</h2> |
 | -------------------------------------    | ----------- |
 |              push                        |  pushes an element to the stack. Usage: `push <int>` |
 |              pall                        |  prints all the values on the stack, starting from the top of the stack. Usage: `pall` |
