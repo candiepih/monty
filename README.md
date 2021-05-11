@@ -56,3 +56,11 @@ Any error message must be printed on `stderr`
 `monty file`
 
 where `file` is the path to the file containing Monty byte code
+
+<h2>Files</h2>
+Below are files used and their descriptions
+
+| File name      | Description |
+| -----------    | ----------- |
+| Header         | Title       |
+| Paragraph      | Text        |
