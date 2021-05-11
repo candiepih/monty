@@ -75,5 +75,5 @@ Below are files used and their descriptions
 |     [bytecodes](../monty/tree/main/bytecodes)                                  | Folder that contains monty bytecodes test files |
 
 <h1>Authors</h1>
-mutheeal.am@gmail.com <(@candiepih)[https://github.com/candiepih]>
+mutheeal.am@gmail.com (@candiepih)[https://github.com/candiepih]
 
