@@ -49,9 +49,10 @@ The code is compiled this way:
 `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`
 
 Output is printed on `stdout`. 
-Any error message must be printed on `stderr`
+Any error message are printed on `stderr`
 
 <h2>Usage</h2>
+After compiling run:-
 
 `monty file`
 
@@ -74,7 +75,21 @@ Below are files used and their descriptions
 |     [monty.h](../main/monty.h)                                      | Contains all function prototypes, data structures and header files |
 |     [bytecodes](../main/bytecodes)                                  | Folder that contains monty bytecodes test files |
 
+<h1>opcodes</h1>
+
+| Opcode                                   | Description |
+| -------------------------------------    | ----------- |
+|              push                        |  pushes an element to the stack. Usage: `push <int>` |
+|              pall                        |  prints all the values on the stack, starting from the top of the stack. Usage: `pall` |
+|              pint                        |  prints the value at the top of the stack, followed by a new line. Usage: `pint` |
+|              pop                         |  removes the top element of the stack. Usage: `pop` |
+|              swap                        |  swaps the top two elements of the stack. Usage: `swap` |
+|              add                         |  adds the top two elements of the stack. Usage: `add`. Result is stored in the second top element of the stack, and the top element is removed |
+|              nop                         |  doesn’t do anything. Does absolutely nothing. Usage: `nop` |
+
+
 <h1>Authors</h1>
+
 Alex Steve [mutheeal.am@gmail.com]
 
 [@candiepih](https://github.com/candiepih)
