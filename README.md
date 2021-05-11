@@ -77,15 +77,15 @@ Below are files used and their descriptions
 
 <h1>opcodes</h1>
 
-| File name                       | Description |
-| -----------------------------------    | ----------- |
-|     push                        |  pushes an element to the stack. Usage: `push <int>` |
-|     pall                        |  prints all the values on the stack, starting from the top of the stack. Usage: `pall` |
-|     pint                        |  prints the value at the top of the stack, followed by a new line. Usage: `pint` |
-|     pop                         |  removes the top element of the stack. Usage: `pop` |
-|     swap                        |  swaps the top two elements of the stack. Usage: `swap` |
-|     add                         |  adds the top two elements of the stack. Usage: `add`. Result is stored in the second top element of the stack, and the top element is removed |
-|     nop                         |  doesn’t do anything. Does absolutely nothing. Usage: `nop` |
+| File name                                | Description |
+| -------------------------------------    | ----------- |
+|              push                        |  pushes an element to the stack. Usage: `push <int>` |
+|              pall                        |  prints all the values on the stack, starting from the top of the stack. Usage: `pall` |
+|              pint                        |  prints the value at the top of the stack, followed by a new line. Usage: `pint` |
+|              pop                         |  removes the top element of the stack. Usage: `pop` |
+|              swap                        |  swaps the top two elements of the stack. Usage: `swap` |
+|              add                         |  adds the top two elements of the stack. Usage: `add`. Result is stored in the second top element of the stack, and the top element is removed |
+|              nop                         |  doesn’t do anything. Does absolutely nothing. Usage: `nop` |
 
 
 <h1>Authors</h1>
