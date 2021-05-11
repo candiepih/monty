@@ -19,6 +19,7 @@ void push(stack_t **stack, unsigned int line_number)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		free(dup_line);
+		clear_stack(*stack);
 		clean_exit();
 	}
 
@@ -54,6 +55,7 @@ void pint(stack_t **stack, unsigned int line_number)
 	if (!stack || !*stack)
 	{
 		fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
+		clear_stack(*stack);
 		clean_exit();
 	}
 	printf("%d\n", (*stack)->n);
@@ -70,6 +72,7 @@ void pop(stack_t **stack, unsigned int line_number)
 	if (!stack || !*stack)
 	{
 		fprintf(stderr, "L%d: can't pop an empty stack\n", line_number);
+		clear_stack(*stack);
 		clean_exit();
 	}
 	remove_node_start(stack, *stack);
@@ -90,6 +93,7 @@ void swap(stack_t **stack, unsigned int line_number)
 	if (stack_length(*stack) < 2)
 	{
 		fprintf(stderr, "L%d: can't swap, stack too short\n", line_number);
+		clear_stack(*stack);
 		clean_exit();
 	}
 	tmp = *stack;
