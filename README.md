@@ -60,7 +60,7 @@ where `file` is the path to the file containing Monty byte code
 <h2>Files</h2>
 Below are files used and their descriptions
 
-| File name      | Description |
-| -----------    | ----------- |
-| Header         | Title       |
-| Paragraph      | Text        |
+| File name                                                                      | Description |
+| ---------------------------------------------------------------------------    | ----------- |
+|     [monty.c](../monty/blob/main/monty.c)                                      | Entry point to the program      |
+|     [file_handling.c](../monty/blob/main/file_handling.c)                      | Contains functions that are involved in reading instructions from the file     |
