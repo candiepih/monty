@@ -69,3 +69,9 @@ Below are files used and their descriptions
 |     [instructions2.c](../monty/blob/main/instructions2.c)                      | An extension of [instructions.c](../monty/blob/main/instructions.c) |
 |     [stack_handling.c](../monty/blob/main/stack_handling.c)                    | Contains functions involved in manipulating elements in a stack, ie pushing, popping ... |
 |     [stack_handling2.c](../monty/blob/main/stack_handling2.c)                  | An extension of [stack_handling2.c](../monty/blob/main/stack_handling2.c) functions |
+|     [string_functions.c](../monty/blob/main/string_functions.c)                | Contains functions responsible for string handling and validations |
+|     [error_handling.c](../monty/blob/main/error_handling.c)                    | Functions responsible for error handling including handling safe exitting on errors |
+|     [monty.h](../monty/blob/main/monty.h)                                      | Contains all function prototypes, data structures and header files |
+|     [bytecodes](../monty/tree/main/bytecodes)                                  | Folder that contains monty bytecodes test files |
+| ----------------------------------------------------------------------------   | ----------------------------------------------- |
+
