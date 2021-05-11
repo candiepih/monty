@@ -30,7 +30,7 @@ void add(stack_t **stack, unsigned int line_number)
  * @line_number: current instruction line number
  *
  * Description: Am not all that useless. Don't belief me?
- * try removing and your code breaks.
+ * try removing me and your code breaks.
  * Return: absolutely nothing
  */
 void nop(__attribute__((unused)) stack_t **stack,
