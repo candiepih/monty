@@ -76,5 +76,6 @@ Below are files used and their descriptions
 
 <h1>Authors</h1>
 Alex Steve <mutheeal.am@gmail.com>
+
 [@candiepih](https://github.com/candiepih)
 
