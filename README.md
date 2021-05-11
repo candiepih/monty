@@ -62,17 +62,17 @@ Below are files used and their descriptions
 
 | File name                                                                      | Description |
 | ---------------------------------------------------------------------------    | ----------- |
-|     [monty.c](../monty/blob/main/monty.c)                                      | Entry point to the program      |
-|     [file_handling.c](../monty/blob/main/file_handling.c)                      | Contain functions that are involved in reading instructions from the file     |
-|     [interpret.c](../monty/blob/main/interpret.c)                              | Contain functions ressponsible for stepping through each instruction and interprating |
-|     [instructions.c](../monty/blob/main/instructions.c)                        | Functions responsible for operations perfomed from opcodes instructions |
-|     [instructions2.c](../monty/blob/main/instructions2.c)                      | An extension of [instructions.c](../monty/blob/main/instructions.c) |
-|     [stack_handling.c](../monty/blob/main/stack_handling.c)                    | Contains functions involved in manipulating elements in a stack, ie pushing, popping ... |
-|     [stack_handling2.c](../monty/blob/main/stack_handling2.c)                  | An extension of [stack_handling2.c](../monty/blob/main/stack_handling2.c) functions |
-|     [string_functions.c](../monty/blob/main/string_functions.c)                | Contains functions responsible for string handling and validations |
-|     [error_handling.c](../monty/blob/main/error_handling.c)                    | Functions responsible for error handling including handling safe exitting on errors |
-|     [monty.h](../monty/blob/main/monty.h)                                      | Contains all function prototypes, data structures and header files |
-|     [bytecodes](../monty/tree/main/bytecodes)                                  | Folder that contains monty bytecodes test files |
+|     [monty.c](..//main/monty.c)                                      | Entry point to the program      |
+|     [file_handling.c](../mmain/file_handling.c)                      | Contain functions that are involved in reading instructions from the file     |
+|     [interpret.c](../main/interpret.c)                              | Contain functions ressponsible for stepping through each instruction and interprating |
+|     [instructions.c](../main/instructions.c)                        | Functions responsible for operations perfomed from opcodes instructions |
+|     [instructions2.c](../main/instructions2.c)                      | An extension of [instructions.c](../monty/blob/main/instructions.c) |
+|     [stack_handling.c](../main/stack_handling.c)                    | Contains functions involved in manipulating elements in a stack, ie pushing, popping ... |
+|     [stack_handling2.c](../main/stack_handling2.c)                  | An extension of [stack_handling2.c](../monty/blob/main/stack_handling2.c) functions |
+|     [string_functions.c](../main/string_functions.c)                | Contains functions responsible for string handling and validations |
+|     [error_handling.c](../main/error_handling.c)                    | Functions responsible for error handling including handling safe exitting on errors |
+|     [monty.h](../main/monty.h)                                      | Contains all function prototypes, data structures and header files |
+|     [bytecodes](../main/bytecodes)                                  | Folder that contains monty bytecodes test files |
 
 <h1>Authors</h1>
 Alex Steve [mutheeal.am@gmail.com]
