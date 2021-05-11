@@ -85,6 +85,7 @@ Below are files used and their descriptions
 |     pop                         |  removes the top element of the stack. Usage: `pop` |
 |     swap                        |  swaps the top two elements of the stack. Usage: `swap` |
 |     add                         |  adds the top two elements of the stack. Usage: `add`. Result is stored in the second top element of the stack, and the top element is removed |
+|     nop                         |
 
 
 <h1>Authors</h1>
