@@ -83,16 +83,18 @@ void pstr(stack_t **stack, __attribute__((unused)) unsigned int line_number)
 	stack_t *head;
 
 	head = *stack;
-	while (head)
+	if (head != NULL)
 	{
-		if (head->n == 0 || (head->n < 0 || head->n > 127))
-			break;
-		printf("%c", head->n);
-		head = head->next;
+		while (head)
+		{
+			if ((head->n == 0) || (head->n < 0 || head->n > 127))
+				break;
+			printf("%c", head->n);
+			head = head->next;
+		}
 	}
 
-	if (head)
-		printf("\n");
+	printf("\n");
 }
 
 /**
