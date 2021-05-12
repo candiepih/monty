@@ -68,7 +68,9 @@ Below are files used and their descriptions
 |     [file_handling.c](../mmain/file_handling.c)                      | Contain functions that are involved in reading instructions from the file     |
 |     [interpret.c](../main/interpret.c)                              | Contain functions ressponsible for stepping through each instruction and interprating |
 |     [instructions.c](../main/instructions.c)                        | Functions responsible for operations perfomed from opcodes instructions |
-|     [instructions2.c](../main/instructions2.c)                      | An extension of [instructions.c](../monty/blob/main/instructions.c) |
+|     [instructions2.c](../main/instructions2.c)                      | An extension of [instructions.c](../monty/blob/main/instructions.c). Opcodes functionality |
+|     [instructions3.c](../main/instructions3.c))                     | An extension of [instructions.c](../monty/blob/main/instructions.c). Opcodes functionality |
+|     [instructions4.c](../main/instructions4.c))                     | An extension of [instructions.c](../monty/blob/main/instructions.c). Opcodes functionality |
 |     [stack_handling.c](../main/stack_handling.c)                    | Contains functions involved in manipulating elements in a stack, ie pushing, popping ... |
 |     [stack_handling2.c](../main/stack_handling2.c)                  | An extension of [stack_handling2.c](../monty/blob/main/stack_handling2.c) functions |
 |     [string_functions.c](../main/string_functions.c)                | Contains functions responsible for string handling and validations |
@@ -87,10 +89,17 @@ Below are files used and their descriptions
 |              swap                        |  swaps the top two elements of the stack. Usage: `swap` |
 |              add                         |  adds the top two elements of the stack. Usage: `add`. Result is stored in the second top element of the stack, and the top element is removed |
 |              nop                         |  doesn’t do anything. Does absolutely nothing. Usage: `nop` |
-
+|              sub                         |  subtracts the top element of the stack from the second top element of the stack |
+|              div                         |  divides the second top element of the stack by the top element of the stack |
+|              mul                         |  multiplies the second top element of the stack with the top element of the stack |
+|              mod                         |  computes the rest of the division of the second top element of the stack by the top element of the stack. i.e modulus |
+|              comments                    |  ignores instruction when the first non-space character of a line is `#`. On encountering `#` it does absolutely nothing |
+|              pchar                       |  prints the char at the top of the stack |
+|              pstr                        |  prints the string starting at the top of the stack |
+|              rotl                        |  rotates the stack to the top. top element of the stack becomes the last one, and the second top element of the stack becomes the first one |
+|              rotr                        |  rotates the stack to the bottom. The last element of the stack becomes the top element of the stack
 
 <h1>Authors</h1>
-
 Alex Steve [mutheeal.am@gmail.com]
 
 [@candiepih](https://github.com/candiepih)
