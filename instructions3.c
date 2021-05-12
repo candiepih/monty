@@ -53,15 +53,14 @@ void pchar(stack_t **stack, unsigned int line_number)
 {
 	int value;
 
-	if (!stack || !*stack)
+	if (stack_length(*stack) == 0)
 	{
 		fprintf(stderr, "L%d: can't pchar, stack empty\n", line_number);
 		clear_stack(*stack);
 		clean_exit();
 	}
 	value = (*stack)->n;
-
-	if (value < 0 || value > 255)
+	if (value < 0 || value > 127)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
 		clear_stack(*stack);
@@ -83,18 +82,15 @@ void pstr(stack_t **stack, __attribute__((unused)) unsigned int line_number)
 	stack_t *head;
 
 	head = *stack;
-	if (head != NULL)
+	while (head)
 	{
-		while (head)
-		{
-			if ((head->n == 0) || (head->n < 0 || head->n > 255))
-				break;
-			printf("%c", head->n);
-			head = head->next;
-		}
+		if (head->n <= 0 || head->n > 127)
+			break;
+		printf("%c", head->n);
+		head = head->next;
 	}
 
-	printf("\n");
+	printf('\n');
 }
 
 /**
