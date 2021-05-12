@@ -33,10 +33,8 @@ stack_t *add_node_head(stack_t **head, int n)
 
 	new_node = malloc(sizeof(stack_t));
 	if (!new_node)
-	{
-		print_stderr("Error: malloc failed\n");
 		return (NULL);
-	}
+
 	new_node->n = n;
 	new_node->next = *head;
 	new_node->prev = NULL;
