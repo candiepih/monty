@@ -17,7 +17,11 @@ void process_instructions(unsigned int line_number, stack_t **stack)
 
 	if (token)
 	{
-		instruction_f = get_instruction(token);
+		if (token[0] == '#')
+			instruction_f = get_instruction("#");
+		else
+			instruction_f = get_instruction(token);
+
 		if (instruction_f == NULL)
 		{
 			fprintf(stderr, "L%d: unknown instruction %s\n", line_number, token);
@@ -51,6 +55,11 @@ void (*get_instruction(char *cmd))(stack_t **stack, unsigned int line_number)
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
+		{"sub", sub},
+		{"div", div2},
+		{"mul", mul},
+		{"mod", mod},
+		{"#", comments},
 		{NULL, NULL}
 	};
 
