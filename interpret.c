@@ -60,6 +60,9 @@ void (*get_instruction(char *cmd))(stack_t **stack, unsigned int line_number)
 		{"mul", mul},
 		{"mod", mod},
 		{"#", comments},
+		{"pchar", pchar},
+		{"pstr", pstr},
+		{"rotl", rotl},
 		{NULL, NULL}
 	};
 
