@@ -40,6 +40,7 @@ typedef struct instruction_s
 /**
  * struct stack_t_utils - global variables
  * @instruction: string pointer to current instruction
+ * @dt_type: string to the name of current data structure in use
  * @fp: pointer to the opened file
  *
  * Description: file pointer and current instruction being accessed
@@ -47,6 +48,7 @@ typedef struct instruction_s
 typedef struct stack_t_utils
 {
 	char *instruction;
+	char *dt_type;
 	FILE *fp;
 } utils;
 
@@ -63,7 +65,6 @@ int print_stack(stack_t *head);
 stack_t *add_node_head(stack_t **head, int n);
 stack_t *add_node_end(stack_t **head, int n);
 int remove_node_start(stack_t **head, stack_t *current_node);
-int remove_node_at_position(stack_t **head, int index);
 void clear_stack(stack_t *head);
 int stack_length(stack_t *head);
 
@@ -94,6 +95,8 @@ void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
 void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
+void stack(stack_t **stack, unsigned int line_number);
+void queue(stack_t **stack, unsigned int line_number);
 
 /* string handling prototypes*/
 int is_numeric(char *s);

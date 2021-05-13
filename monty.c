@@ -9,6 +9,7 @@
 int main(int argc, char **argv)
 {
 	s_utils.fp = NULL;
+	s_utils.dt_type = "stack";
 	s_utils.instruction = NULL;
 
 	if (argc != 2)
