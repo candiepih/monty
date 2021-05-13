@@ -32,14 +32,15 @@ stack_t *add_node_head(stack_t **head, int n)
 	stack_t *new_node;
 
 	new_node = malloc(sizeof(stack_t));
+
 	if (!new_node)
 		return (NULL);
+	if (*head)
+		(*head)->prev = new_node;
 
 	new_node->n = n;
 	new_node->next = *head;
 	new_node->prev = NULL;
-	if (*head)
-		(*head)->prev = new_node;
 	*head = new_node;
 
 	return (new_node);
@@ -103,49 +104,5 @@ int remove_node_start(stack_t **head, stack_t *current_node)
 		*head = tmp;
 		return (1);
 	}
-	return (-1);
-}
-
-/**
- * remove_node_at_position - deletes a node at a given index
- * @head: top of the stack
- * @index: position of the element to delete starting from index 0
- * Return: (1) on Success (-1) on failure
- */
-
-int remove_node_at_position(stack_t **head, int index)
-{
-	stack_t *current_node;
-	stack_t *tmp;
-	int idx = 0;
-
-	if (!head || !(*head) || (int)index < 0)
-		return (-1);
-
-	current_node = *head;
-	if ((int)index == 0)
-		return (remove_node_start(head, current_node));
-
-	while (current_node)
-	{
-		if (idx == index)
-		{
-			if (!current_node->next)
-			{
-				tmp = current_node;
-				current_node->prev->next = NULL;
-				free(tmp);
-				return (1);
-			}
-			tmp = current_node;
-			current_node->prev->next = current_node->next;
-			current_node->next->prev = current_node->prev;
-			free(tmp);
-			return (1);
-		}
-		current_node = current_node->next;
-		idx++;
-	}
-
 	return (-1);
 }

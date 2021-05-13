@@ -10,6 +10,7 @@ void push(stack_t **stack, unsigned int line_number)
 {
 	char *value, *dup_line;
 	char *delimeter = " '\r''\n''\t'";
+	stack_t *new_node = NULL;
 
 	dup_line = strdup(s_utils.instruction);
 	strtok(dup_line, delimeter);
@@ -23,7 +24,12 @@ void push(stack_t **stack, unsigned int line_number)
 		clean_exit();
 	}
 
-	if (add_node_head(stack, atoi(value)) == NULL)
+	if (strcmp(s_utils.dt_type, "queue") == 0)
+		new_node = add_node_end(stack, atoi(value));
+	else
+		new_node = add_node_head(stack, atoi(value));
+
+	if (new_node == NULL)
 	{
 		print_stderr("Error: malloc failed\n");
 		free(dup_line);
