@@ -97,7 +97,9 @@ Below are files used and their descriptions
 |              pchar                       |  prints the char at the top of the stack |
 |              pstr                        |  prints the string starting at the top of the stack |
 |              rotl                        |  rotates the stack to the top. top element of the stack becomes the last one, and the second top element of the stack becomes the first one |
-|              rotr                        |  rotates the stack to the bottom. The last element of the stack becomes the top element of the stack
+|              rotr                        |  rotates the stack to the bottom. The last element of the stack becomes the top element of the stack |
+|              stack                       |  sets the format of the data to a stack (LIFO) |
+|              queue                       |  sets the format of the data to a queue (FIFO) |
 
 <h1>Authors</h1>
 
