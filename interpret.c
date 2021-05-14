@@ -35,6 +35,8 @@ void process_instructions(unsigned int *line_number, stack_t **stack)
 	}
 	else
 	{
+		if (*line_number > 0)
+			*line_number += 1;
 		free(duplicate_line);
 	}
 }
