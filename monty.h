@@ -75,7 +75,7 @@ void close_file(void);
 void handle_file(char *filename);
 
 /* instructions interpratation prototypes */
-void process_instructions(unsigned int line_number, stack_t **stack);
+void process_instructions(unsigned int *line_number, stack_t **stack);
 void (*get_instruction(char *cmd))(stack_t **stack, unsigned int line_number);
 
 /* instructions prototypes*/

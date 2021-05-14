@@ -13,6 +13,11 @@ int is_numeric(char *s)
 
 	while (s[i])
 	{
+		if (i == 0 && s[i] == '-')
+		{
+			i++;
+			continue;
+		}
 		if (s[i] < '0' || s[i] > '9')
 			return (0);
 		i++;
