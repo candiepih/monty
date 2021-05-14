@@ -78,7 +78,7 @@ Below are files used and their descriptions
 |     [monty.h](../main/monty.h)                                      | Contains all function prototypes, data structures and header files |
 |     [bytecodes](../main/bytecodes)                                  | Folder that contains monty bytecodes test files |
 
-<h1>opcodes</h1>
+<h2>opcodes</h2>
 
 | Opcode                                   | Description |
 | -------------------------------------    | ----------- |
