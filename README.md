@@ -108,7 +108,7 @@ Brainfuck is an esoteric programming language created in 1993 by Urban Müller. 
 
 <h2>Usage</h2>
 
-All Brainf*ck files are stored inside the bf sub directory. Install the `bf` interpreter to test your code: `sudo apt-get install bf`. Enter into the directory and run `bf filename`
+All Brainf*ck files are stored inside the bf sub directory. Install the `bf` interpreter to run code in brainf*ck files: `sudo apt-get install bf`. Enter into the directory and run `bf filename`
 
 <h2>Files</h2>
 
