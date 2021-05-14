@@ -27,10 +27,7 @@ void read_file(void)
 
 	head = NULL;
 	while ((getline(&s_utils.instruction, &line_count, s_utils.fp)) != -1)
-	{
-		line_number += 1;
-		process_instructions(line_number, &head);
-	}
+		process_instructions(&line_number, &head);
 
 	clear_stack(head);
 	free(s_utils.instruction);

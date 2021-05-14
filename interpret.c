@@ -6,7 +6,7 @@
  * @stack: a stack_t stack
  * Return: nothing
  */
-void process_instructions(unsigned int line_number, stack_t **stack)
+void process_instructions(unsigned int *line_number, stack_t **stack)
 {
 	char *duplicate_line, *token;
 	char *delimeter = " '\r''\n''\t'";
@@ -17,6 +17,7 @@ void process_instructions(unsigned int line_number, stack_t **stack)
 
 	if (token)
 	{
+		*line_number += 1;
 		if (token[0] == '#')
 			instruction_f = get_instruction("#");
 		else
@@ -24,13 +25,13 @@ void process_instructions(unsigned int line_number, stack_t **stack)
 
 		if (instruction_f == NULL)
 		{
-			fprintf(stderr, "L%d: unknown instruction %s\n", line_number, token);
+			fprintf(stderr, "L%d: unknown instruction %s\n", *line_number, token);
 			free(duplicate_line);
 			clear_stack(*stack);
 			clean_exit();
 		}
 		free(duplicate_line);
-		instruction_f(stack, line_number);
+		instruction_f(stack, *line_number);
 	}
 	else
 	{
