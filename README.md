@@ -101,6 +101,23 @@ Below are files used and their descriptions
 |              stack                       |  sets the format of the data to a stack (LIFO) |
 |              queue                       |  sets the format of the data to a queue (FIFO) |
 
+
+<h1>BrainF*ck</h1>
+
+Brainfuck is an esoteric programming language created in 1993 by Urban Müller. Notable for its extreme minimalism, the language consists of only eight simple commands and an instruction pointer.
+
+<h1>Usage</h1>
+
+All Brainf*ck files are stored inside the bf sub directory. Install the `bf` interpreter to test your code: `sudo apt-get install bf`. Enter into the directory and run `bf filename`
+
+<h1>Files</h1>
+
+| File name                                                         | Description |
+| --------------------------------------------------------------    | ----------- |
+|    [1000-holberton.bf](../main/bf/1000-holberton.bf)              | prints `Holberton`, followed by a new line |
+|    [1001-add.bf](../main/bf/1001-add.bf)                          | Add two digits given by the user. Iotal of the two digits will be one digit-long (<10) |
+
+
 <h1>Authors</h1>
 
 Alex Steve [mutheeal.am@gmail.com]
